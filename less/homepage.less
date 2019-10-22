@@ -1,4 +1,86 @@
-.home
-{
+.top-image{
+    background-image: url("../images/pink-beautiful-hair.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100rem;
+
+    .top-text{
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        color: @white;
+
+        h1{
+            width: 1200px;
+            font-size: 20rem;
+            text-align: center;
+            opacity: 0.75;
+        }
+
+    }
+}
+
+.top-content{
+        display: flex;
+        width: 100%;
+
+        div{
+            margin: 0 2rem 0 2rem;
+            border: 1px solid @pink;
+            padding: 1rem;
+
+
+            h1{
+                text-align: center;
+                margin-bottom: 2rem;
+            }//closes h1
+        }//closes div
+    }//closes .top-content
+
+.month-stylist{
+    width: 100%;
+    margin-bottom: 2rem;
+
+    div{
+        margin: 2rem 5rem 0 5rem;
+    }//closes div
+}//closes .month-stylist
+
+.bottom-content{
+    background-color: @pink;
+    border: 1px solid @black;
     
+    .contact-info{
+        text-align: center;
+        color: @light;
+        padding-top: 1rem;
+    }//closes contact-info
+
+    .bottom-links{
+        text-align: center;
+        padding: 2rem 2rem 2rem 0;
+
+        nav{
+            a{
+                color: @black;
+                font-size: 1.6rem;
+                text-decoration: none;
+                padding-right: 15rem;
+
+                &:hover{
+                    color: @white;
+                    text-decoration: underline;
+                }//closes &:hover
+
+            }//closes a
+        }//closes nav
+    }//closes .bottom-links
+}//closes .bottom-content
+
+footer{
+    text-align: center;
+    color: @pink;
+    background-color: @black;
+    padding: 1rem 0 1rem 0;
+
 }
