@@ -87,8 +87,11 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
+}
+@font-face {
+  font-family: canaro;
+  src: url(Canaro-LightDEMO.otf);
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -128,20 +131,21 @@ table {
 }
 * {
   box-sizing: border-box;
+  margin: 0 auto;
 }
 html {
   font-size: 62.5%;
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: '@font-face', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Canaro', sans-serif;
+  font-family: '@font-face', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -164,12 +168,12 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 header {
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -177,6 +181,7 @@ header {
 header .signup-stylist {
   width: 60rem;
   padding: 2rem 0 2rem 0;
+  margin-left: 2rem;
 }
 header .signup-stylist a {
   padding-right: 3rem;
@@ -192,6 +197,7 @@ header .signup-client {
   width: 60rem;
   text-align: right;
   padding: 2rem 0 2rem 0;
+  margin-right: 2rem;
 }
 header .signup-client a {
   padding-left: 3rem;
@@ -204,20 +210,23 @@ header .signup-client a:hover {
   text-decoration: underline;
 }
 .logo-nav {
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   display: flex;
 }
 .logo-nav div {
   width: 60rem;
-  margin: 5rem;
+}
+.logo-nav div .logo {
+  margin: 5rem 5rem 5rem 5rem;
 }
 .logo-nav .home-navbar {
   width: 60rem;
   text-align: right;
   font-size: 2rem;
-  padding-top: 3rem;
+  padding-top: 8rem;
+  margin: 5rem 5rem 5rem 0;
 }
 .logo-nav .home-navbar nav a {
   padding-left: 2rem;
@@ -235,6 +244,12 @@ header .signup-client a:hover {
   color: #000000;
   text-decoration: underline;
 }
+footer {
+  text-align: center;
+  color: #e83e8c;
+  background-color: #000000;
+  padding: 1rem 0 1rem 0;
+}
 .top-image {
   background-image: url("../images/pink-beautiful-hair.jpg");
   background-repeat: no-repeat;
@@ -244,11 +259,10 @@ header .signup-client a:hover {
 .top-image .top-text {
   position: absolute;
   top: 55%;
-  left: 10%;
   color: #ffffff;
 }
 .top-image .top-text h1 {
-  width: 1200px;
+  width: 1000px;
   font-size: 20rem;
   text-align: center;
   opacity: 0.75;
@@ -276,6 +290,7 @@ header .signup-client a:hover {
 .bottom-content {
   background-color: #e83e8c;
   border: 1px solid #000000;
+  width: 100%;
 }
 .bottom-content .contact-info {
   text-align: center;
@@ -284,7 +299,8 @@ header .signup-client a:hover {
 }
 .bottom-content .bottom-links {
   text-align: center;
-  padding: 2rem 2rem 2rem 0;
+  padding: 2rem 2rem 2rem 2rem;
+  margin-right: -13rem;
 }
 .bottom-content .bottom-links nav a {
   color: #000000;
@@ -295,10 +311,4 @@ header .signup-client a:hover {
 .bottom-content .bottom-links nav a:hover {
   color: #ffffff;
   text-decoration: underline;
-}
-footer {
-  text-align: center;
-  color: #e83e8c;
-  background-color: #000000;
-  padding: 1rem 0 1rem 0;
 }
