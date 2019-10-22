@@ -8,9 +8,11 @@
         position: absolute;
         top: 55%;
         color: @white;
+        margin-left: -25rem;
         @media @mobile{
             width: 500px;
             overflow-wrap: normal;
+            margin-left: 0;
         }//closes query
 
         h1{
@@ -40,8 +42,6 @@
             @media @mobile{
                 margin-bottom: 2rem;
             }
-
-
             h1{
                 text-align: center;
                 margin-bottom: 2rem;
@@ -76,16 +76,15 @@
     }//closes contact-info
 
     .bottom-links{
-        width: 1000px;
         text-align: center;
-        padding: 0;
+        padding-bottom: 1rem;
         @media @mobile{
             width: 500px;
             margin-left: 3rem;
         }
 
         nav{
-            margin-left: 9rem;
+            
             @media @mobile{
                 width: 500px;
                 display: flex;
@@ -96,7 +95,7 @@
                 color: @black;
                 font-size: 1.6rem;
                 text-decoration: none;
-                padding-right: 10rem;
+                padding-right: 5rem;
                 @media @mobile{
                     color: @white;
                     padding-right: 0;

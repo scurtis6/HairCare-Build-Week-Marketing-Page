@@ -191,7 +191,7 @@ header .signup-stylist {
   margin-left: 2rem;
 }
 header .signup-stylist a {
-  padding-right: 3rem;
+  padding-right: 0.2rem;
   font-size: 1.4rem;
   color: black;
   text-decoration: none;
@@ -207,7 +207,7 @@ header .signup-client {
   margin-right: 2rem;
 }
 header .signup-client a {
-  padding-left: 3rem;
+  padding-left: 0.2rem;
   font-size: 1.4rem;
   color: black;
   text-decoration: none;
@@ -310,11 +310,13 @@ footer {
   position: absolute;
   top: 55%;
   color: #ffffff;
+  margin-left: -25rem;
 }
 @media (max-width: 500px) {
   .top-image .top-text {
     width: 500px;
     overflow-wrap: normal;
+    margin-left: 0;
   }
 }
 .top-image .top-text h1 {
@@ -380,18 +382,14 @@ footer {
   }
 }
 .bottom-content .bottom-links {
-  width: 1000px;
   text-align: center;
-  padding: 0;
+  padding-bottom: 1rem;
 }
 @media (max-width: 500px) {
   .bottom-content .bottom-links {
     width: 500px;
     margin-left: 3rem;
   }
-}
-.bottom-content .bottom-links nav {
-  margin-left: 9rem;
 }
 @media (max-width: 500px) {
   .bottom-content .bottom-links nav {
@@ -405,7 +403,7 @@ footer {
   color: #000000;
   font-size: 1.6rem;
   text-decoration: none;
-  padding-right: 10rem;
+  padding-right: 5rem;
 }
 @media (max-width: 500px) {
   .bottom-content .bottom-links nav a {
