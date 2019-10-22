@@ -8,25 +8,38 @@
         position: absolute;
         top: 55%;
         color: @white;
+        @media @mobile{
+            width: 500px;
+            overflow-wrap: normal;
+        }//closes query
 
         h1{
-            width: 1000px;
+            margin-left: 40rem;
             font-size: 20rem;
             text-align: center;
             opacity: 0.75;
-        }
-
-    }
-}
+            @media @mobile{
+                margin-left: -0.8rem;
+                font-size: 12rem;
+            }
+        }//closes h1
+    }//closes .top-text
+}//closes .top-image
 
 .top-content{
         display: flex;
         width: 100%;
+        @media @mobile{
+            flex-direction: column;
+        }
 
         div{
             margin: 0 2rem 0 2rem;
             border: 1px solid @pink;
             padding: 1rem;
+            @media @mobile{
+                margin-bottom: 2rem;
+            }
 
 
             h1{
@@ -49,28 +62,54 @@
     background-color: @pink;
     border: 1px solid @black;
     width: 100%;
+    @media @mobile{
+        background-color: @black;
+    }
     
     .contact-info{
         text-align: center;
         color: @light;
         padding-top: 1rem;
+        @media @mobile{
+            color: @pink;
+        }
     }//closes contact-info
 
     .bottom-links{
+        width: 1000px;
         text-align: center;
-        padding: 2rem 2rem 2rem 2rem;
-        margin-right: -13rem;
+        padding: 0;
+        @media @mobile{
+            width: 500px;
+            margin-left: 3rem;
+        }
 
         nav{
+            margin-left: 9rem;
+            @media @mobile{
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                margin-left: -3rem;
+            }
             a{
                 color: @black;
                 font-size: 1.6rem;
                 text-decoration: none;
-                padding-right: 15rem;
+                padding-right: 10rem;
+                @media @mobile{
+                    color: @white;
+                    padding-right: 0;
+                    font-size: 5rem;
+                    padding-bottom: 1rem;
+                }
 
                 &:hover{
                     color: @white;
                     text-decoration: underline;
+                    @media @mobile{
+                        color: @pink;
+                    }
                 }//closes &:hover
 
             }//closes a

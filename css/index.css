@@ -172,6 +172,13 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 header {
   max-width: 1000px;
   width: 100%;
@@ -215,11 +222,28 @@ header .signup-client a:hover {
   margin: 0 auto;
   display: flex;
 }
+@media (max-width: 500px) {
+  .logo-nav {
+    flex-direction: column;
+  }
+}
 .logo-nav div {
   width: 60rem;
 }
+@media (max-width: 500px) {
+  .logo-nav div {
+    width: 50rem;
+  }
+}
 .logo-nav div .logo {
   margin: 5rem 5rem 5rem 5rem;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .logo-nav div .logo {
+    margin-left: 5rem;
+    width: 80%;
+  }
 }
 .logo-nav .home-navbar {
   width: 60rem;
@@ -228,10 +252,30 @@ header .signup-client a:hover {
   padding-top: 8rem;
   margin: 5rem 5rem 5rem 0;
 }
+@media (max-width: 500px) {
+  .logo-nav .home-navbar {
+    width: 500px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 5rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .logo-nav .home-navbar nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .logo-nav .home-navbar nav a {
   padding-left: 2rem;
   color: black;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .logo-nav .home-navbar nav a {
+    padding-left: 0;
+    font-size: 8rem;
+  }
 }
 .logo-nav .home-navbar nav a:hover {
   color: #e83e8c;
@@ -250,6 +294,12 @@ footer {
   background-color: #000000;
   padding: 1rem 0 1rem 0;
 }
+@media (max-width: 500px) {
+  footer {
+    color: #000000;
+    background-color: #e83e8c;
+  }
+}
 .top-image {
   background-image: url("../images/pink-beautiful-hair.jpg");
   background-repeat: no-repeat;
@@ -261,20 +311,42 @@ footer {
   top: 55%;
   color: #ffffff;
 }
+@media (max-width: 500px) {
+  .top-image .top-text {
+    width: 500px;
+    overflow-wrap: normal;
+  }
+}
 .top-image .top-text h1 {
-  width: 1000px;
+  margin-left: 40rem;
   font-size: 20rem;
   text-align: center;
   opacity: 0.75;
+}
+@media (max-width: 500px) {
+  .top-image .top-text h1 {
+    margin-left: -0.8rem;
+    font-size: 12rem;
+  }
 }
 .top-content {
   display: flex;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .top-content {
+    flex-direction: column;
+  }
+}
 .top-content div {
   margin: 0 2rem 0 2rem;
   border: 1px solid #e83e8c;
   padding: 1rem;
+}
+@media (max-width: 500px) {
+  .top-content div {
+    margin-bottom: 2rem;
+  }
 }
 .top-content div h1 {
   text-align: center;
@@ -292,23 +364,63 @@ footer {
   border: 1px solid #000000;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .bottom-content {
+    background-color: #000000;
+  }
+}
 .bottom-content .contact-info {
   text-align: center;
   color: #f8f9fa;
   padding-top: 1rem;
 }
+@media (max-width: 500px) {
+  .bottom-content .contact-info {
+    color: #e83e8c;
+  }
+}
 .bottom-content .bottom-links {
+  width: 1000px;
   text-align: center;
-  padding: 2rem 2rem 2rem 2rem;
-  margin-right: -13rem;
+  padding: 0;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-links {
+    width: 500px;
+    margin-left: 3rem;
+  }
+}
+.bottom-content .bottom-links nav {
+  margin-left: 9rem;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-links nav {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -3rem;
+  }
 }
 .bottom-content .bottom-links nav a {
   color: #000000;
   font-size: 1.6rem;
   text-decoration: none;
-  padding-right: 15rem;
+  padding-right: 10rem;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-links nav a {
+    color: #ffffff;
+    padding-right: 0;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+  }
 }
 .bottom-content .bottom-links nav a:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-links nav a:hover {
+    color: #e83e8c;
+  }
 }
