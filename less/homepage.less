@@ -129,9 +129,8 @@
                 margin-left: -3rem;
             }
             a{
-                color: @black;
+                .navstyle(@black; none);
                 font-size: 1.6rem;
-                text-decoration: none;
                 padding-right: 5rem;
                 @media @mobile{
                     color: @white;
@@ -141,8 +140,8 @@
                 }
 
                 &:hover{
-                    color: @white;
-                    text-decoration: underline;
+                    .navstyle(@white; underline);
+    
                     @media @mobile{
                         color: @pink;
                     }
