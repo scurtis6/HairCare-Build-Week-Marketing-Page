@@ -13,123 +13,129 @@
 </head>
 
 <body>
-		<div id="page-container">
-				<div id="content-wrap">
-	<header>
-		<div class="headerimage">
-			<div class="headertext">
-				<h1>Hairsay</h1>
+	<div id="page-container">
+		<div id="content-wrap">
+			<header>
+				<div class="headerimage">
+					<div class="headertext">
+						<h1>Hairsay</h1>
+					</div>
+				</div>
+			</header>
+
+
+			<section class="navcontainer">
+				<div>
+					<img class="logo" src="images/hairsaylogo.jpg" alt="logo">
+				</div>
+				<div class="navbar">
+					<nav>
+						<a href="index.html">HOME</a>
+						<a href="about.html">ABOUT US</a>
+						<!-- <a href="signup.html">SIGNUP</a> Should this be in the nav bar if there are dual signups ? -->
+						<a href="reviews.html">REVIEWS</a>
+						<a href="gallery.html">GALLERY</a>
+						<a class="about.html" href="#">LOGIN</a>
+					</nav>
+				</div>
+			</section>
+			<main>
+
+
+				<form action="/signup" method="POST">
+					<p>
+						<label>Title</label>
+						<label>
+							<input type="radio" name="title" value="mr">
+							Mr
+						</label>
+						<label>
+							<input type="radio" name="title" value="mrs">
+							Mrs
+						</label>
+						<label>
+							<input type="radio" name="title" value="miss">
+							Miss
+						</label>
+					</p>
+					<p>
+						<label>First name</label>
+						<input type="text" value="first_name">
+					</p>
+					<p>
+						<label>Last name</label>
+						<input type="text" value="last_name">
+					</p>
+					<p>
+						<label>Email</label>
+						<input type="email" value="email">
+					</p>
+					<p>
+						<label>Phone number</label>
+						<input type="tel" value="phone">
+					</p>
+					<p>
+						<label>Password</label>
+						<input type="password" value="password">
+					</p>
+					<p>
+						<label>Confirm your password</label>
+						<input type="password" value="password_confirm">
+					</p>
+					<p>
+						<label>Country</label>
+						<select>
+							<option>Canada</option>
+							<option>France</option>
+							<option>Germany</option>
+							<option>Italy</option>
+							<option>Japan</option>
+							<option>Russia</option>
+							<option>United Kingdom</option>
+							<option>United States</option>
+						</select>
+					</p>
+					<p>
+						<label>
+							<input type="checkbox" value="terms">
+							I agree to the <a href="/terms">terms and conditions</a>
+						</label>
+					</p>
+					<p>
+						<button>
+							Sign up
+						</button>
+					</p>
+				</form>
+
+
+
+			</main>
+			<footer id="footer"></footer>
+
+			<div class="bottomcontact">
+				<div class="contact-info">
+					<h3>Contact Information</h3>
+					<p>1234 Nowhere street, anywhere, USA</p>
+					<p>123-456-7890</p>
+					<p>anywhere@email.com</p>
+				</div>
+				<div class="bottomnav">
+					<nav>
+						<a href="index.html">HOME</a>
+						<a href="about.html">ABOUT US</a>
+						<!-- <a href="signup.html">SIGNUP</a> Should this be in the nav bar if there are dual signups ? -->
+						<a href="reviews.html">REVIEWS</a>
+						<a href="gallery.html">GALLERY</a>
+						<a class="about.html" href="#">LOGIN</a>
+					</nav>
+				</div>
+
 			</div>
+
 		</div>
-	</header>
-
-
-	<section class="navcontainer">
-		<div>
-			<img class="logo" src="images/hairsaylogo.jpg" alt="logo">
-		</div>
-		<div class="navbar">
-			<nav>
-				<a href="index.html">HOME</a>
-				<a href="about.html">ABOUT US</a>
-				<!-- <a href="signup.html">SIGNUP</a> Should this be in the nav bar if there are dual signups ? -->
-				<a href="reviews.html">REVIEWS</a>
-				<a href="gallery.html">OUR STYLIST'S WORK</a>
-				<a class="about.html" href="#">LOGIN</a>
-			</nav>
-		</div>
-	</section>
-<main>
-
-
-    <form action="action_page.php">
-        <div class="container">
-          <h1>Register</h1>
-          <p>Please fill in this form to create an account.</p>
-          <hr>
-      
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-          <hr>
-      
-          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-          <button type="submit" class="registerbtn">Register</button>
-        </div>
-      
-        <div class="container signin">
-          <p>Already have an account? <a href="#">Sign in</a>.</p>
-        </div>
-      </form>
-
-
-
-
-
-</main>
-  <footer id="footer"></footer>
-	
-	<div class="bottomcontact">
-		<div class="contact-info">
-			<h3>Contact Information</h3>
-			<p>1234 Nowhere street, anywhere, USA</p>
-			<p>123-456-7890</p>
-			<p>anywhere@email.com</p>
-		</div>
-		<div class="bottomnav">
-			<nav>
-					<a href="index.html">HOME</a>
-					<a href="about.html">ABOUT US</a>
-					<!-- <a href="signup.html">SIGNUP</a> Should this be in the nav bar if there are dual signups ? -->
-					<a href="reviews.html">REVIEWS</a>
-					<a href="gallery.html">OUR STYLIST'S WORK</a>
-					<a class="about.html" href="#">LOGIN</a>
-			</nav>
-		</div>
-
 	</div>
-	</footer>
-</div>
-</div>
-</div>
+
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-<!--Signup Header for homepage
-<!-header>
-	<section class="hero">
-			<!- <img class="header-image" height="1000px" max-width="800px" src="images/mainheader.jpg" alt="Woman with pink hair"> -->
-<!-- <button class="buttonsignup">
-        <nav class="signupnav">
-			<h2>Ready to simplify booking your next client?</h2>
-			<!-Button to open the modal -->
-<!-- <button onclick="signup.html('id01')">Sign Up</button> -->
-
-<!-- <a href="signup.html">STYLIST SIGNUP</a>
-            <a href="#">LOGIN</a> 
-        </nav>
-    </button>
-    <button class="buttonsignup"> -->
-<!-- <nav class="signupnav">
-			<h2>Ready to get reviews of local stylists in your area and book today?</h2>
-			<!- <button onclick="signup.html('id01')">Sign Up</button> -->
-
-<!-- <a href="signup.html">CLIENT SIGNUP</a>
-            <a href="#">LOGIN</a>
-        </nav>
-    </button-> -->
-<!-- <img class="header-image" height="1000px" max-width="800px" src="images/mainheader.jpg" alt="Woman with pink hair"> -->
-<!--/section>
-</header-->

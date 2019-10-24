@@ -1,15 +1,170 @@
-h3{
-    font-size: 2rem;
-    line-height: 20px;
-    margin: auto;
-    padding: 5%;
-    text-align:center;
-    color: pink;
+//general text styles
+
+h3 {
+  font-size: 4rem;
+  line-height: 60px;
+  margin: auto;
+  padding: 5%;
+  text-align: center;
+  color: pink;
 }
 
-@media @mobile{
-    yelpreviews{
-        display:flex;
-        flex-direction: column;
-    } 
+a {
+  padding-left: 0.2rem;
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    color: @pink;
+    text-decoration: underline;
+  }
+}
+
+.featurediv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-bottom: 10%;
+
+  .featured {
+    border-radius: 20px;
+
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//   body {
+//     font-family: Arial;
+//     margin: 0 auto; /* Center website */
+//     max-width: 800px; /* Max width */
+//     padding: 20px;
+//   }
+
+.heading {
+  color: pink;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 10%;
+
+}
+
+.fa {
+  font-size: 3rem;
+  display: flex;
+
+  @media @mobile {
+    margin-left: 7rem;
+  }
+}
+
+.checked {
+  color: orange;
+}
+
+
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+  padding: 10px;
+  color: black;
+
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+
+}
+
+
+.right {
+  text-align: right;
+  padding: 10px;
+
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+  margin-left: 23px;
+}
+
+
+.bar-5 {
+  width: 60%;
+  height: 18px;
+  background-color: #4CAF50;
+}
+
+.bar-4 {
+  width: 30%;
+  height: 18px;
+  background-color: #2196F3;
+}
+
+.bar-3 {
+  width: 10%;
+  height: 18px;
+  background-color: #00bcd4;
+}
+
+.bar-2 {
+  width: 4%;
+  height: 18px;
+  background-color: #ff9800;
+}
+
+.bar-1 {
+  width: 15%;
+  height: 18px;
+  background-color: #f44336;
+}
+
+
+@media (max-width: 500px) {
+
+  .side,
+  .middle {
+    width: 100%;
+  }
+
+  .right {
+    display: none;
+  }
+}
+
+
+
+.yelpreviews {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+
+  @media @mobile {
+    flex-direction: column;
+  }
+}
+
+@media (min-width:500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
 }

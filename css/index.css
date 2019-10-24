@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  background: #f8f9fa;
 }
 html,
 body {
@@ -168,7 +169,6 @@ img {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  background-color: white;
 }
 @media (max-width: 500px) {
   .container {
@@ -187,7 +187,7 @@ header .headerimage {
   background-image: url("../images/mainheader.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  height: 80rem;
+  height: 40rem;
   width: 100%;
 }
 header .headerimage .headertext {
@@ -238,7 +238,7 @@ a:hover {
 .navcontainer {
   max-width: 1000px;
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem 1rem 1rem 1rem;
   display: flex;
   align-items: flex-start;
 }
@@ -248,7 +248,7 @@ a:hover {
   }
 }
 .navcontainer div {
-  width: 60rem;
+  width: 100%;
 }
 @media (max-width: 500px) {
   .navcontainer div {
@@ -256,9 +256,9 @@ a:hover {
   }
 }
 .navcontainer div .logo {
-  margin: 5rem 5rem 5rem 5rem;
-  width: 30%;
-  padding-bottom: 30%;
+  margin: 1rem 5rem 5rem 5rem;
+  width: 10%;
+  padding-bottom: 10%;
 }
 @media (max-width: 500px) {
   .navcontainer div .logo {
@@ -269,10 +269,10 @@ a:hover {
 .navcontainer div .navbar {
   display: flex;
   width: 100%;
-  text-align: left;
+  text-align: right;
   font-size: 2rem;
-  padding-bottom: 55rem;
-  margin: 5rem 5rem 5rem 0;
+  padding-bottom: 2rem;
+  margin: 1rem 4rem 1rem 1rem;
 }
 @media (max-width: 500px) {
   .navcontainer div .navbar {
@@ -292,6 +292,7 @@ a:hover {
   padding-left: 2rem;
   color: black;
   text-decoration: none;
+  margin-left: 5rem;
 }
 @media (max-width: 500px) {
   .navcontainer div .navbar nav a {
@@ -398,7 +399,6 @@ a:hover {
     color: #e83e8c;
   }
 }
-/*may add additional image*/
 body {
   max-width: 1000px;
   width: 100%;
@@ -411,6 +411,15 @@ body h2 {
   opacity: 0.75;
   text-shadow: 1rem 1rem pink;
 }
+body .topheader {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  body .topheader {
+    flex-direction: column;
+  }
+}
 body main {
   display: flex;
 }
@@ -418,8 +427,9 @@ body main .aboutcontainer {
   display: flex;
   height: 100%;
   width: 100%;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-right: 10%;
+  padding-left: 10%;
 }
 @media (max-width: 500px) {
   body main .aboutcontainer {
@@ -459,12 +469,29 @@ body main .aboutcontainer h3 {
   padding: 5%;
   color: pink;
 }
+body main .aboutcontainer h4 {
+  font-size: 1rem;
+  line-height: 10px;
+  margin: auto;
+  padding: 5%;
+  color: pink;
+}
+body main .aboutcontainer p {
+  font-size: 1rem;
+  line-height: 5px;
+  text-align: center;
+  margin: 0.1rem 3rem 2rem 3rem;
+  color: pink;
+}
 @media (max-width: 500px) {
   body main .navcontainer {
     width: 100%;
     height: 100%;
     display: flex;
-    padding: 3%;
+  }
+  body main .navbar {
+    justify-content: center;
+    margin-left: 10%;
   }
 }
 @media (max-width: 500px) {
@@ -479,15 +506,122 @@ body main .aboutcontainer h3 {
   }
 }
 h3 {
-  font-size: 2rem;
-  line-height: 20px;
+  font-size: 4rem;
+  line-height: 60px;
   margin: auto;
   padding: 5%;
   text-align: center;
   color: pink;
 }
+a {
+  padding-left: 0.2rem;
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #e83e8c;
+  text-decoration: underline;
+}
+.featurediv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+.featurediv .featured {
+  border-radius: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+.heading {
+  color: pink;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 10%;
+}
+.fa {
+  font-size: 3rem;
+}
+.checked {
+  color: orange;
+}
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+  padding: 10px;
+  color: black;
+}
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+.right {
+  text-align: right;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+  margin-left: 23px;
+}
+.bar-5 {
+  width: 60%;
+  height: 18px;
+  background-color: #4CAF50;
+}
+.bar-4 {
+  width: 30%;
+  height: 18px;
+  background-color: #2196F3;
+}
+.bar-3 {
+  width: 10%;
+  height: 18px;
+  background-color: #00bcd4;
+}
+.bar-2 {
+  width: 4%;
+  height: 18px;
+  background-color: #ff9800;
+}
+.bar-1 {
+  width: 15%;
+  height: 18px;
+  background-color: #f44336;
+}
 @media (max-width: 500px) {
-  yelpreviews {
+  .side,
+  .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+.yelpreviews {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .yelpreviews {
+    flex-direction: column;
+  }
+}
+@media (min-width: 500px) {
+  main {
     display: flex;
     flex-direction: column;
   }
@@ -531,6 +665,47 @@ h3 {
 .row {
   padding-bottom: 70%;
 }
+body {
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.searchTerm {
+  width: 100%;
+  border: 3px solid pink;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: pink;
+}
+.searchTerm:focus {
+  color: pink;
+}
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid magenta;
+  background: pink;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 50%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 * {
   box-sizing: border-box;
 }
@@ -568,11 +743,16 @@ hr {
 .registerbtn:hover {
   opacity: 1;
 }
-/* Add a blue text color to links */
 a {
-  color: dodgerblue;
+  padding-left: 0.2rem;
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
 }
-/* Set a grey background color and center the text of the "sign in" section */
+a:hover {
+  color: #e83e8c;
+  text-decoration: underline;
+}
 .signin {
   background-color: #f1f1f1;
   text-align: center;
@@ -613,6 +793,16 @@ hr {
 }
 .registerbtn:hover {
   opacity: 1;
+}
+a {
+  padding-left: 0.2rem;
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: #e83e8c;
+  text-decoration: underline;
 }
 .signin {
   background-color: #f1f1f1;

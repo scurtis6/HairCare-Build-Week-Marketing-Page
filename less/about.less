@@ -1,28 +1,72 @@
-/*may add additional image*/
-// #page-container {
-//   position: relative;
-//   min-height: 100vh;
-// }
-
-// #content-wrap {
-//   padding-bottom: 2.5rem;    /* Footer height */
-// }
-
-// #footer {
-//   position: absolute;
-//   bottom: 0;
-//   width: 100%;
-//   height: 2.5rem;            /* Footer height */
-// }
-
-
 body {
   max-width: 1000px;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  
-  h2  {
+
+  ///signup styles
+  header {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+
+
+
+    .signup-stylist {
+      width: 60rem;
+      padding: 2rem 0 2rem 0;
+      margin-left: 2rem;
+
+      a {
+        padding-right: 0.2rem;
+        font-size: 1.4rem;
+        .navstyle(@black; none);
+
+        &:hover {
+          .navstyle(@pink; underline);
+        }
+
+        //closes hover  
+      }
+
+      //close a
+    }
+
+    //closes .signup-stylist
+    .signup-client {
+      width: 60rem;
+      text-align: right;
+      padding: 2rem 0 2rem 0;
+      margin-right: 2rem;
+
+      a {
+        padding-left: 0.2rem;
+
+        font-size: 1.4rem;
+        .navstyle(@black; none);
+
+        &:hover {
+          .navstyle(@pink; underline);
+        }
+
+        @media @mobile {
+          margin-left: 20%;
+          //closes hover
+        }
+
+        //closes a
+      }
+
+      //closes .signup-client
+    }
+
+    //closes header
+  }
+
+  ///signup styles end
+
+  h2 {
     text-align: center;
     // margin-bottom: 2rem;
     // margin-left: 40rem;
@@ -31,150 +75,153 @@ body {
     opacity: 0.75;
     text-shadow: 1rem 1rem pink;
   }
-  // 
- main{
-  display: flex;
-  // justify-content: center;
 
-  .aboutcontainer {
-    display:flex;
-    height:100%;
-    width: 100%;
-    // margin: 50%;
-    padding-top:20%;
-    padding-right:10%;
+  .topheader {
+    display: flex;
+    justify-content: center;
+
     @media @mobile {
       flex-direction: column;
     }
 
-    // display: flex;
-    // width: 100%;
-    // height: 90%;
-    // margin: 50%;
-    //  justify-content:center;
-    // justify-content:space-around;
-    // padding-top:5%;
-    // padding-bottom:55%;
-    // padding-right:10%;
-    // padding-left:10%;
-    div img{
-      margin: 0 2rem 0 2rem;
-      border: 1px solid @pink;
-      padding: 1rem;
+  }
+
+  main {
+    display: flex;
+
+
+    .aboutcontainer {
+      display: flex;
+      height: 100%;
+      width: 100%;
+
+      padding-top: 10%;
+      padding-right: 10%;
+      padding-left: 10%;
 
       @media @mobile {
-        margin-bottom: 2rem;
+        flex-direction: column;
       }
 
-      
 
-      
-   
+      div img {
+        margin: 0 2rem 0 2rem;
+        border: 1px solid @pink;
+        padding: 1rem;
 
-  } 
-  
+        @media @mobile {
+          margin-bottom: 2rem;
+        }
 
 
-  .aboutteamimages {
 
-    justify-content: space-between;
-    flex-wrap:wrap;
-    align-content: center;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding-right:70px;
-    // padding-bottom:100px;
 
-    border-radius: 20px;
+
+
+      }
+
+
+
+      .aboutteamimages {
+
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding-right: 70px;
+        // padding-bottom:100px;
+
+        border-radius: 20px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        border-radius: 20px;
+      }
+
+      h3 {
+        font-size: 2rem;
+        line-height: 20px;
+        margin: auto;
+        padding: 5%;
+        color: pink;
+
+      }
+
+      h4 {
+        font-size: 1rem;
+        line-height: 10px;
+        margin: auto;
+        padding: 5%;
+        color: pink;
+
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 5px;
+        text-align: center;
+        margin: .1rem 3rem 2rem 3rem;
+        // padding: 5%;
+        color: pink;
+      }
+
+
+    }
+
+
+
+    @media @mobile {
+      .navcontainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+
+      .navbar {
+        justify-content: center;
+        margin-left: 10%;
+      }
+
+    }
+
+    //  .about .aboutteamimages {
+    //     width: 48%;
+    //     height:48%;
+    //     padding-left: 1%;
+
+    //   }
+
+    //   @media (max-width: 500px) {
+    //     .about  {
+    //       width: 100%;
+    //       padding: 0;
+    //       display:flex;
+
+    //     }
+    //   }
+    @media (max-width: 500px) {
+      .aboutteamimages img h3 {
+        width: 48%;
+        flex-wrap: wrap;
+        // width: 40px;
+        // height: 205px;
+
+      }
+    }
+
+
+    @media(max-width: 500px) {
+      .h3 {
+        font-size: 1rem;
+
+      }
+    }
+
+    // @mobile:~ "(max-width: 500px)";
   }
-
-    img {
-      width: 100%;
-      height: 100%;
-      margin: 0 auto;
-      border-radius: 20px;
-    }
-  
-    h3 {
-      font-size: 2rem;
-      line-height: 20px;
-      margin: auto;
-      padding: 5%;
-      color: pink;
-
-    }
-  
-
-
 }
-
-
-
-  @media (max-width: 500px) {
-    .navcontainer {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      padding: 3%;
-    }
-  }
-
-  //  .about .aboutteamimages {
-  //     width: 48%;
-  //     height:48%;
-  //     padding-left: 1%;
-
-  //   }
-
-  //   @media (max-width: 500px) {
-  //     .about  {
-  //       width: 100%;
-  //       padding: 0;
-  //       display:flex;
-
-  //     }
-  //   }
-  @media (max-width: 500px) {
-    .aboutteamimages img h3 {
-      width: 48%;
-      flex-wrap: wrap;
-      // width: 40px;
-      // height: 205px;
-
-    }
-  }
-
-  // @media (max-width: 500px) {
-  //  .aboutteamimages  {
-  //       order: 1;
-
-
-  //     }
-  //   }
-
-
-
-  //   @media (max-width: 500px) {
-  //     .container .aboutteamimages img p {
-  //       order: 2;
-
-  //     }
-  //   }
-
-  // @media (max-width: 500px){
-  //     .Adrian .Sierra .Hector .Stella .Sandra .Vick{
-
-  //       justify-content: flex-start;
-  //     }
-  // }
-
-  @media(max-width: 500px) {
-    .h3 {
-      font-size: 1rem;
-      // justify-content: center;
-    }
-  }
-
-  // @mobile:~ "(max-width: 500px)";
-}}
