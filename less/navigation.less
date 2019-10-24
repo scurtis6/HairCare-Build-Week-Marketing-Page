@@ -1,65 +1,166 @@
-body{
-    background-color:white;
-
-
-header{
-  max-width: 1200px;
+header {
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  
 
-    .logo{
-        height:100px
-    }
-    .cornerlogo{
-      max-width: 1200px;
-      width: 100%;
-      margin: 0 auto;
-    }
-  div{
-    width: 20rem;
-    margin: 5rem;
-    display:flex;
-    flex-wrap: wrap;}
-    
-  
-   
-.navbar {
-    width: 80%;
-    text-align: right;
-    font-size: 1.5rem;
-    padding-top: .5rem;
-    margin-left:45%;
-    display:flex;
-    flex-wrap: wrap;
+  .headerimage {
+    background-image: url("../images/mainheader.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 80rem;
+    width:100%;
 
-    nav{
-        a{
-            padding-left: 2rem;
-            color: black;
-            text-decoration: none;
+    .headertext {
+      position: absolute;
+      // top: 55%;
+      color: @white;
+      margin-left: -12rem;
 
-            &:hover{
-                color: @pink;
-                text-decoration: underline;
-            }//closes hover
-        }//closes a
-        .aboutlog{
-            color: @pink;
+      @media @mobile {
+        width: 500px;
+        overflow-wrap: normal;
+        margin-left: 0;
+      }
 
-            &:hover{
-                color: @black;
-                text-decoration: underline;
-            }
+      //closes query
+
+      h1 {
+        margin-left: 40rem;
+        font-size: 10rem;
+        text-align: center;
+        opacity: 0.75;
+        text-shadow: 1rem 1rem pink;
+
+        @media @mobile {
+          margin-left: -0.8rem;
+          font-size: 12rem;
         }
-    }  }
+      }
+
+     
+    }
+
+    //closes .top-text
+  }
+
+  //closes .top-image
+
+  a {
+    padding-right: 0.2rem;
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: @pink;
+      text-decoration: underline;
+    }
+
+    //closes hover  
+  }
+
+  //close a
 }
+
+a {
+  padding-left: 0.2rem;
+  font-size: 1.4rem;
+  color: black;
+  text-decoration: none;
+
+  &:hover {
+    color: @pink;
+    text-decoration: underline;
+  }
 }
 
+.navcontainer {
+  max-width: 1000px;
+  width: 100%;
+  // height:100%;
+  margin: 0 auto;
+  
+  display: flex;
+  align-items: flex-start;
 
+  @media @mobile {
+    flex-direction: column;
+  }
 
+  div {
+    width: 60rem;
 
+    @media @mobile {
+      width: 50rem;
+    }
 
-@mobile:~ "(max-width: 500px)";
+    .logo {
+      margin: 5rem 5rem 5rem 5rem;
+      width: 30%;
+      padding-bottom:30%;
+
+      @media @mobile {
+        margin-left: 5rem;
+        width: 80%;
+      }
+    }
+
+   
+    .navbar {
+      display: flex;
+      width: 100%;
+    
+      text-align: left;
+      font-size: 2rem;
+      padding-bottom: 55rem;
+      margin: 5rem 5rem 5rem 0;
+    
+
+      @media @mobile {
+        width: 500px;
+        text-align: center;
+        margin: 0;
+        padding: 0 0 5rem 0;
+      }
+
+      nav {
+        @media @mobile {
+          display: flex;
+          flex-direction: column;
+        }
+
+        a {
+          padding-left: 2rem;
+          color: black;
+          text-decoration: none;
+
+          @media @mobile {
+            padding-left: 0;
+            font-size: 8rem;
+          }
+
+          &:hover {
+            color: @pink;
+            text-decoration: underline;
+          }
+
+          //closes hover
+        }
+
+        //closes a
+        .home-login {
+          color: @pink;
+
+          &:hover {
+            color: @black;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      //
+    }
+  }
+}
+

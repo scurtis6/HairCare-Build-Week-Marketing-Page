@@ -1,81 +1,134 @@
 <!doctype html>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Hair Care</title>
-  <meta name="viewport"content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+<html lang="eng">
 
-  <link href="" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+<head>
+	<meta charset="utf-8">
+	<title>Hairsay</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/index.css">
+
 </head>
 
- <body>
+<body>
+		<div id="page-container">
+				<div id="content-wrap">
+	<header>
+		<div class="headerimage">
+			<div class="headertext">
+				<h1>Hairsay</h1>
+			</div>
+		</div>
+	</header>
 
-       <!-- Button to open the modal
-<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button> -->
 
-<!-- The Modal (contains the Sign Up form) -->
-<div id="id01" class="modal">
-  <span onclick="signup.html('id01').style.display='none'" class="close" title="Close Modal">times;</span>
-  <form class="modal-content" action="/action_page.php">
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+	<section class="navcontainer">
+		<div>
+			<img class="logo" src="images/hairsaylogo.jpg" alt="logo">
+		</div>
+		<div class="navbar">
+			<nav>
+				<a href="index.html">HOME</a>
+				<a href="about.html">ABOUT US</a>
+				<!-- <a href="signup.html">SIGNUP</a> Should this be in the nav bar if there are dual signups ? -->
+				<a href="reviews.html">REVIEWS</a>
+				<a href="gallery.html">OUR STYLIST'S WORK</a>
+				<a class="about.html" href="#">LOGIN</a>
+			</nav>
+		</div>
+	</section>
+<main>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <form action="action_page.php">
+        <div class="container">
+          <h1>Register</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <hr>
+      
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <button type="submit" class="registerbtn">Register</button>
+        </div>
+      
+        <div class="container signin">
+          <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+      </form>
 
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
 
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-      <div class="clearfix">
-        <button type="button" onclick="signup.html('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signup">Sign Up</button>
-      </div>
-    </div>
-  </form>
+
+
+</main>
+  <footer id="footer"></footer>
+	
+	<div class="bottomcontact">
+		<div class="contact-info">
+			<h3>Contact Information</h3>
+			<p>1234 Nowhere street, anywhere, USA</p>
+			<p>123-456-7890</p>
+			<p>anywhere@email.com</p>
+		</div>
+		<div class="bottomnav">
+			<nav>
+					<a href="index.html">HOME</a>
+					<a href="about.html">ABOUT US</a>
+					<!-- <a href="signup.html">SIGNUP</a> Should this be in the nav bar if there are dual signups ? -->
+					<a href="reviews.html">REVIEWS</a>
+					<a href="gallery.html">OUR STYLIST'S WORK</a>
+					<a class="about.html" href="#">LOGIN</a>
+			</nav>
+		</div>
+
+	</div>
+	</footer>
 </div>
+</div>
+</div>
+</body>
+</html>
 
 
 
 
-</body> -->
 
 
-	<!--Signup Header for homepage
+  
+<!--Signup Header for homepage
 <!-header>
 	<section class="hero">
 			<!- <img class="header-image" height="1000px" max-width="800px" src="images/mainheader.jpg" alt="Woman with pink hair"> -->
-    <!-- <button class="buttonsignup">
+<!-- <button class="buttonsignup">
         <nav class="signupnav">
 			<h2>Ready to simplify booking your next client?</h2>
 			<!-Button to open the modal -->
-			<!-- <button onclick="signup.html('id01')">Sign Up</button> -->
+<!-- <button onclick="signup.html('id01')">Sign Up</button> -->
 
-            <!-- <a href="signup.html">STYLIST SIGNUP</a>
+<!-- <a href="signup.html">STYLIST SIGNUP</a>
             <a href="#">LOGIN</a> 
         </nav>
     </button>
     <button class="buttonsignup"> -->
-        <!-- <nav class="signupnav">
+<!-- <nav class="signupnav">
 			<h2>Ready to get reviews of local stylists in your area and book today?</h2>
 			<!- <button onclick="signup.html('id01')">Sign Up</button> -->
 
-            <!-- <a href="signup.html">CLIENT SIGNUP</a>
+<!-- <a href="signup.html">CLIENT SIGNUP</a>
             <a href="#">LOGIN</a>
         </nav>
     </button-> -->
-	<!-- <img class="header-image" height="1000px" max-width="800px" src="images/mainheader.jpg" alt="Woman with pink hair"> -->
+<!-- <img class="header-image" height="1000px" max-width="800px" src="images/mainheader.jpg" alt="Woman with pink hair"> -->
 <!--/section>
-</header--> 
+</header-->

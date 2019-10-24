@@ -1,42 +1,108 @@
 <!doctype html>
 
 <html lang="eng">
+
 <head>
-  <meta charset="utf-8">
-  <title>Hair Care</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
-<script src="/js/google-places.js "></script> 
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=[API_KEY]"></script>
+	<meta charset="utf-8">
+	<title>Hairsay</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/index.css">
 
 </head>
-<body>
-<header>
 
-<div class="cornerlogo">
-    <div>
-        <img class="logo" src="images/hairsaylogo.jpg" alt="logo">
+<body>
+		<div id="page-container">
+				<div id="content-wrap">
+	<header>
+		<div class="headerimage">
+			<div class="headertext">
+				<h1>Hairsay</h1>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="navcontainer">
+		<div>
+			<img class="logo" src="images/hairsaylogo.jpg" alt="logo">
+		</div>
+		<div class="navbar">
+			<nav>
+				<a href="index.html">HOME</a>
+				<a href="about.html">ABOUT US</a>
+				<!-- <a href="signup.html">SIGNUP</a> Should this be in the nav bar if there are dual signups ? -->
+				<a href="reviews.html">REVIEWS</a>
+				<a href="gallery.html">OUR STYLIST'S WORK</a>
+				<a class="about.html" href="#">LOGIN</a>
+			</nav>
+		</div>
+    </section>
+    
+    <h3>Check out our Stylist's work!</h3>
+    <main>
+            <div class="row">
+                    <div class="column">
+                      <img src="images/work-1.jpg" alt="work of stylists" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="images/work-2.jpg" alt="work of stylists" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="images/work-3.jpg" alt="work of stylists" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                      <img src="images/work-4.jpg" alt="work of stylists" onclick="myFunction(this);">
+                    </div>
+                  </div>
+                  
+                  <div class="container">
+                        
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                      
+                       
+                        <img id="expandedImg" style="width:100%">
+                      
+                       
+                        <div id="imgtext"></div>
+                      </div>              
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+    </main>
+
+
+<footer id="footer"></footer>
+	
+<div class="bottomcontact">
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>1234 Nowhere street, anywhere, USA</p>
+        <p>123-456-7890</p>
+        <p>anywhere@email.com</p>
     </div>
-    <div class="navbar">
+    <div class="bottomnav">
         <nav>
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT US</a>
-			<a href="signup.html">SIGNUP</a>
-			<a href="reviews.html">REVIEWS</a>
-			<a href="gallery.html">MEET OUR STYLISTS</a>
-            <a class="aboutlog" href="#">LOGIN</a>
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <!-- <a href="signup.html">SIGNUP</a> Should this be in the nav bar if there are dual signups ? -->
+                <a href="reviews.html">REVIEWS</a>
+                <a href="gallery.html">OUR STYLIST'S WORK</a>
+                <a class="about.html" href="#">LOGIN</a>
         </nav>
     </div>
+
 </div>
-</header>
-
-<input type="text" name="search" placeholder="Search..">
-
-<img src="images/bg_1.jpg" alt="Woman with curly hair">
-
-
-
-
+</footer>
+</div>
+</div>
+</div>
 </body>
 </html>
