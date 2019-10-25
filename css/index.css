@@ -1,0 +1,469 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+@font-face {
+  font-family: canaro;
+  src: url(Canaro-LightDEMO.otf);
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: '@font-face', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: '@font-face', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+header {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+header .signup-stylist {
+  width: 60rem;
+  padding: 2rem 0 2rem 0;
+  margin-left: 2rem;
+}
+header .signup-stylist a {
+  padding-right: 0.2rem;
+  font-size: 1.4rem;
+  color: #000000;
+  text-decoration: none;
+}
+header .signup-stylist a:hover {
+  color: #e83e8c;
+  text-decoration: underline;
+}
+header .signup-client {
+  width: 60rem;
+  text-align: right;
+  padding: 2rem 0 2rem 0;
+  margin-right: 2rem;
+}
+header .signup-client a {
+  padding-left: 0.2rem;
+  font-size: 1.4rem;
+  color: #000000;
+  text-decoration: none;
+}
+header .signup-client a:hover {
+  color: #e83e8c;
+  text-decoration: underline;
+}
+.logo-nav {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .logo-nav {
+    flex-direction: column;
+  }
+}
+.logo-nav div {
+  width: 60rem;
+}
+@media (max-width: 500px) {
+  .logo-nav div {
+    width: 50rem;
+  }
+}
+.logo-nav div .logo {
+  margin: 5rem 5rem 5rem 5rem;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .logo-nav div .logo {
+    margin-left: 5rem;
+    width: 80%;
+  }
+}
+.logo-nav .home-navbar {
+  width: 60rem;
+  text-align: right;
+  font-size: 2rem;
+  padding-top: 8rem;
+  margin: 5rem 5rem 5rem 0;
+}
+@media (max-width: 500px) {
+  .logo-nav .home-navbar {
+    width: 500px;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 5rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .logo-nav .home-navbar nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.logo-nav .home-navbar nav a {
+  padding-left: 2rem;
+  color: #000000;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .logo-nav .home-navbar nav a {
+    padding-left: 0;
+    font-size: 8rem;
+  }
+}
+.logo-nav .home-navbar nav a:hover {
+  color: #e83e8c;
+  text-decoration: underline;
+}
+.logo-nav .home-navbar nav .home-login {
+  color: #e83e8c;
+  text-decoration: none;
+}
+.logo-nav .home-navbar nav .home-login:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  color: #e83e8c;
+  background-color: #000000;
+  padding: 1rem 0 1rem 0;
+}
+@media (max-width: 500px) {
+  footer {
+    color: #000000;
+    background-color: #e83e8c;
+  }
+}
+.top-image {
+  background-image: url("../images/pink-beautiful-hair.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 100rem;
+}
+.top-image .top-text {
+  position: absolute;
+  top: 55%;
+  color: #ffffff;
+  margin-left: -25rem;
+}
+@media (max-width: 500px) {
+  .top-image .top-text {
+    width: 500px;
+    overflow-wrap: normal;
+    margin-left: 0;
+  }
+}
+.top-image .top-text h1 {
+  margin-left: 40rem;
+  font-size: 20rem;
+  text-align: center;
+  opacity: 0.75;
+}
+@media (max-width: 500px) {
+  .top-image .top-text h1 {
+    margin-left: -0.8rem;
+    font-size: 12rem;
+  }
+}
+.top-content {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .top-content {
+    flex-direction: column;
+  }
+}
+.top-content div {
+  margin: 0 2rem 0 2rem;
+  border: 1px solid #e83e8c;
+  padding: 1rem;
+}
+@media (max-width: 500px) {
+  .top-content div {
+    margin-bottom: 2rem;
+  }
+}
+.top-content div h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.top-content div ul {
+  margin-left: 5rem;
+}
+.top-content div ul li {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  text-align: left;
+  list-style-type: disc;
+}
+@media (max-width: 500px) {
+  .top-content div ul li {
+    margin-left: 10rem;
+  }
+}
+.review-stylist {
+  width: 100%;
+  margin: 4rem 0 2rem 0;
+}
+.review-stylist h2 {
+  text-align: center;
+  font-size: 800%;
+}
+.review-stylist .reviews {
+  display: flex;
+}
+.review-stylist .reviews div {
+  margin: 2rem 5rem 0 5rem;
+}
+.review-stylist .reviews div img {
+  width: 30rem;
+  height: 30vh;
+}
+.review-stylist .reviews div .man {
+  margin-left: 4rem;
+}
+@media (max-width: 500px) {
+  .review-stylist .reviews div .man {
+    margin-left: 1.8rem;
+  }
+}
+.review-stylist .reviews div p {
+  margin: 2rem 0;
+}
+.review-stylist .reviews div .man-text {
+  margin-left: 4rem;
+}
+@media (max-width: 500px) {
+  .review-stylist .reviews div .man-text {
+    margin-left: 1.8rem;
+  }
+}
+.bottom-content {
+  background-color: #e83e8c;
+  border: 1px solid #000000;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .bottom-content {
+    background-color: #000000;
+  }
+}
+.bottom-content .contact-info {
+  text-align: center;
+  color: #f8f9fa;
+  padding-top: 1rem;
+}
+@media (max-width: 500px) {
+  .bottom-content .contact-info {
+    color: #e83e8c;
+  }
+}
+.bottom-content .bottom-links {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-links {
+    width: 500px;
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-links nav {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -3rem;
+  }
+}
+.bottom-content .bottom-links nav a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding-right: 5rem;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-links nav a {
+    color: #ffffff;
+    padding-right: 0;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+  }
+}
+.bottom-content .bottom-links nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .bottom-content .bottom-links nav a:hover {
+    color: #e83e8c;
+  }
+}

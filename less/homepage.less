@@ -1,0 +1,154 @@
+.top-image{
+    background-image: url("../images/pink-beautiful-hair.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100rem;
+
+    .top-text{
+        position: absolute;
+        top: 55%;
+        color: @white;
+        margin-left: -25rem;
+        @media @mobile{
+            width: 500px;
+            overflow-wrap: normal;
+            margin-left: 0;
+        }//closes query
+
+        h1{
+            margin-left: 40rem;
+            font-size: 20rem;
+            text-align: center;
+            opacity: 0.75;
+            @media @mobile{
+                margin-left: -0.8rem;
+                font-size: 12rem;
+            }
+        }//closes h1
+    }//closes .top-text
+}//closes .top-image
+
+.top-content{
+        display: flex;
+        width: 100%;
+        @media @mobile{
+            flex-direction: column;
+        }
+
+        div{
+            margin: 0 2rem 0 2rem;
+            border: 1px solid @pink;
+            padding: 1rem;
+            @media @mobile{
+                margin-bottom: 2rem;
+            }
+            h1{
+                text-align: center;
+                margin-bottom: 2rem;
+            }//closes h1
+            ul{
+                margin-left: 5rem;
+                li{
+                margin: 1.5rem 0;
+                font-size: 2rem;
+                text-align: left;
+                list-style-type: disc;
+                @media @mobile{
+                    margin-left: 10rem;
+                }
+            }//closes li
+            }//closes ul
+        }//closes div
+    }//closes .top-content
+
+.review-stylist{
+    width: 100%;
+    margin: 4rem 0 2rem 0;
+    h2{
+        text-align: center;
+        font-size: 800%;
+    }//closes h2
+    .reviews{
+        display: flex;
+        div{
+            margin: 2rem 5rem 0 5rem;
+            img{
+                width: 30rem;
+                height: 30vh;
+            }//closes img
+                .man{
+                    margin-left: 4rem;
+                    @media @mobile{
+                        margin-left: 1.8rem;
+                    } 
+            }//closes .man
+            p{
+                margin: 2rem 0;
+            }//closes p
+            .man-text{
+                margin-left: 4rem;
+                @media @mobile{
+                    margin-left: 1.8rem;
+                }
+            }//closes .main-text
+        }//closes div
+    }//closes reviews
+}//closes .review-stylist
+
+.bottom-content{
+    background-color: @pink;
+    border: 1px solid @black;
+    width: 100%;
+    @media @mobile{
+        background-color: @black;
+    }
+    
+    .contact-info{
+        text-align: center;
+        color: @light;
+        padding-top: 1rem;
+        @media @mobile{
+            color: @pink;
+        }
+    }//closes contact-info
+
+    .bottom-links{
+        text-align: center;
+        padding-bottom: 1rem;
+        @media @mobile{
+            width: 500px;
+            margin-left: 3rem;
+        }
+
+        nav{
+            
+            @media @mobile{
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                margin-left: -3rem;
+            }
+            a{
+                .navstyle(@black; none);
+                font-size: 1.6rem;
+                padding-right: 5rem;
+                @media @mobile{
+                    color: @white;
+                    padding-right: 0;
+                    font-size: 5rem;
+                    padding-bottom: 1rem;
+                }
+
+                &:hover{
+                    .navstyle(@white; underline);
+    
+                    @media @mobile{
+                        color: @pink;
+                    }
+                }//closes &:hover
+
+            }//closes a
+        }//closes nav
+    }//closes .bottom-links
+}//closes .bottom-content
+

@@ -1,0 +1,103 @@
+header{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+
+    .signup-stylist{
+        width: 60rem;
+        padding: 2rem 0 2rem 0;
+        margin-left: 2rem;
+
+        a{
+            padding-right: 0.2rem;   
+            font-size: 1.4rem;
+            .navstyle(@black; none);
+            
+            &:hover{
+                .navstyle(@pink; underline);
+            }//closes hover  
+        }//close a
+    }//closes .signup-stylist
+    .signup-client{
+        width: 60rem;
+        text-align: right;
+        padding: 2rem 0 2rem 0;
+        margin-right: 2rem;
+
+        a{
+            padding-left: 0.2rem;
+            font-size: 1.4rem;
+            .navstyle(@black; none);
+            
+            &:hover{
+                .navstyle(@pink; underline);
+            }//closes hover
+        }//closes a
+    }//closes .signup-client
+}//closes header
+
+.logo-nav{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    @media @mobile{
+        flex-direction: column;
+    }
+
+    div{
+        width: 60rem;
+        @media @mobile{
+            width: 50rem;
+        }
+        
+        .logo{
+            margin: 5rem 5rem 5rem 5rem;
+            width: 40%;
+            @media @mobile{
+                margin-left: 5rem;
+                width: 80%;
+            }
+        }//closes logo
+    }//closes div
+    .home-navbar{
+        width: 60rem;
+        text-align: right;
+        font-size: 2rem;
+        padding-top: 8rem;
+        margin: 5rem 5rem 5rem 0;
+        @media @mobile{
+            width: 500px;
+            text-align: center;
+            margin: 0;
+            padding: 0 0 5rem 0;
+        }
+
+        nav{
+            @media @mobile{
+                display: flex;
+                flex-direction: column;
+            }
+            a{
+                padding-left: 2rem;
+                .navstyle(@black; none);
+                @media @mobile{
+                    padding-left: 0;
+                    font-size: 8rem;
+                }
+
+                &:hover{
+                    .navstyle(@pink; underline);
+                }//closes hover
+            }//closes a
+            .home-login{
+                .navstyle(@pink; none);
+
+                &:hover{
+                    .navstyle(@black; underline);
+                }//closes hover
+            }//closes .home-login
+        }//closes nav
+    }//closes .home-navbar
+}//closes logo-nav
