@@ -136,6 +136,8 @@ html {
 html,
 body {
   font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
 }
 h1,
 h2,
@@ -168,6 +170,7 @@ img {
 .container {
   max-width: 1000px;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 @media (max-width: 500px) {
@@ -405,11 +408,42 @@ body {
   height: 100%;
   margin: 0 auto;
 }
+body header {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+body header .signup-stylist {
+  width: 60rem;
+  padding: 2rem 0 2rem 0;
+  margin-left: 2rem;
+}
+body header .signup-stylist a {
+  padding-right: 0.2rem;
+  font-size: 1.4rem;
+}
+body header .signup-client {
+  width: 60rem;
+  text-align: right;
+  padding: 2rem 0 2rem 0;
+  margin-right: 2rem;
+}
+body header .signup-client a {
+  padding-left: 0.2rem;
+  font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  body header .signup-client a {
+    margin-left: 20%;
+  }
+}
 body h2 {
   font-size: 10rem;
   text-align: center;
   opacity: 0.75;
-  text-shadow: 1rem 1rem pink;
+  color: pink;
+  text-shadow: 1rem 1rem lightslategray;
 }
 body .topheader {
   display: flex;
@@ -544,6 +578,12 @@ a:hover {
 }
 .fa {
   font-size: 3rem;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .fa {
+    margin-left: 7rem;
+  }
 }
 .checked {
   color: orange;
@@ -626,14 +666,34 @@ a:hover {
     flex-direction: column;
   }
 }
-.column {
-  float: left;
+.row {
+  padding-bottom: 20%;
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 500px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.row .column {
   width: 25%;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .row .column {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
 }
 .column img {
   opacity: 0.8;
   cursor: pointer;
+  display: flex;
 }
 .column img:hover {
   opacity: 1;
@@ -661,9 +721,6 @@ a:hover {
   color: white;
   font-size: 35px;
   cursor: pointer;
-}
-.row {
-  padding-bottom: 70%;
 }
 body {
   background: #f2f2f2;
@@ -698,7 +755,6 @@ body {
   cursor: pointer;
   font-size: 20px;
 }
-/*Resize the wrap to see the search bar change!*/
 .wrap {
   width: 50%;
   position: absolute;
@@ -706,107 +762,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-* {
-  box-sizing: border-box;
-}
-.container {
-  padding: 16px;
-}
-input[type=text],
-input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-input[type=text]:focus,
-input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-.registerbtn {
-  background-color: pink;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-.registerbtn:hover {
-  opacity: 1;
-}
-a {
-  padding-left: 0.2rem;
-  font-size: 1.4rem;
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  color: #e83e8c;
-  text-decoration: underline;
-}
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
-}
-* {
-  box-sizing: border-box;
-}
-.container {
-  padding: 20px;
-}
-input[type=text],
-input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-input[type=text]:focus,
-input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-.registerbtn {
-  background-color: pink;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-.registerbtn:hover {
-  opacity: 1;
-}
-a {
-  padding-left: 0.2rem;
-  font-size: 1.4rem;
-  color: black;
-  text-decoration: none;
-}
-a:hover {
-  color: #e83e8c;
-  text-decoration: underline;
-}
-.signin {
-  background-color: #f1f1f1;
-  text-align: center;
+@media (max-width: 500px) {
+  .container {
+    width: 48%;
+  }
 }
 @media (max-width: 500px) {
   .container {
