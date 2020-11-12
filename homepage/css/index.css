@@ -168,7 +168,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 }
@@ -193,11 +193,11 @@ header .signup-stylist {
 header .signup-stylist a {
   padding-right: 0.2rem;
   font-size: 1.4rem;
-  color: #000000;
+  color: #e83e8c;
   text-decoration: none;
 }
 header .signup-stylist a:hover {
-  color: #e83e8c;
+  color: #000000;
   text-decoration: underline;
 }
 header .signup-client {
@@ -209,7 +209,7 @@ header .signup-client {
 header .signup-client a {
   padding-left: 0.2rem;
   font-size: 1.4rem;
-  color: #000000;
+  color: purple;
   text-decoration: none;
 }
 header .signup-client a:hover {
@@ -266,6 +266,10 @@ header .signup-client a:hover {
     flex-direction: column;
   }
 }
+.logo-nav .home-navbar nav .home {
+  color: purple;
+  text-decoration: none;
+}
 .logo-nav .home-navbar nav a {
   padding-left: 2rem;
   color: #000000;
@@ -304,37 +308,27 @@ footer {
 .top-image {
   background-image: url("../images/pink-beautiful-hair.jpg");
   background-repeat: no-repeat;
-  background-position: center top;
-  height: 100rem;
-}
-.top-image .top-text {
-  position: absolute;
-  top: 55%;
-  color: #ffffff;
-  margin-left: -25rem;
+  background-position: center;
+  height: 50rem;
 }
 @media (max-width: 500px) {
-  .top-image .top-text {
-    width: 500px;
-    overflow-wrap: normal;
-    margin-left: 0;
+  .top-image {
+    height: 25rem;
   }
 }
-.top-image .top-text h1 {
-  margin-left: 40rem;
-  font-size: 20rem;
+.top-image h1 {
+  padding-top: 17rem;
+  font-size: 1500%;
   text-align: center;
-  opacity: 0.75;
+  opacity: 0.96;
+  color: whitesmoke;
 }
 @media (max-width: 500px) {
-  .top-image .top-text h1 {
+  .top-image h1 {
     margin-left: -0.8rem;
     font-size: 12rem;
+    padding-top: 5rem;
   }
-}
-.top-content {
-  display: flex;
-  width: 100%;
 }
 @media (max-width: 500px) {
   .top-content {
@@ -342,7 +336,7 @@ footer {
   }
 }
 .top-content div {
-  margin: 0 2rem 0 2rem;
+  margin: 0 0 0 1rem;
   border: 1px solid #e83e8c;
   padding: 1rem;
 }
@@ -379,27 +373,33 @@ footer {
 }
 .review-stylist .reviews {
   display: flex;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .review-stylist .reviews {
+    display: inline;
+  }
 }
 .review-stylist .reviews div {
-  margin: 2rem 5rem 0 5rem;
+  margin: 2rem;
+  padding: 2rem 0 0 2rem;
+  border: 1px solid purple;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .review-stylist .reviews div {
+    margin: 0;
+  }
 }
 .review-stylist .reviews div img {
+  max-width: 100%;
   width: 30rem;
   height: 30vh;
-}
-.review-stylist .reviews div .man {
-  margin-left: 4rem;
 }
 @media (max-width: 500px) {
   .review-stylist .reviews div .man {
     margin-left: 1.8rem;
   }
-}
-.review-stylist .reviews div p {
-  margin: 2rem 0;
-}
-.review-stylist .reviews div .man-text {
-  margin-left: 4rem;
 }
 @media (max-width: 500px) {
   .review-stylist .reviews div .man-text {

@@ -1,42 +1,33 @@
 .top-image{
     background-image: url("../images/pink-beautiful-hair.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
-    height: 100rem;
+    background-position: center;
+    height: 50rem;
+    @media @mobile{
+        height: 25rem;
+    }
 
-    .top-text{
-        position: absolute;
-        top: 55%;
-        color: @white;
-        margin-left: -25rem;
+    h1{
+        padding-top: 17rem;
+        font-size: 1500%;
+        text-align: center;
+        opacity: 0.96;
+        color: whitesmoke;
         @media @mobile{
-            width: 500px;
-            overflow-wrap: normal;
-            margin-left: 0;
-        }//closes query
-
-        h1{
-            margin-left: 40rem;
-            font-size: 20rem;
-            text-align: center;
-            opacity: 0.75;
-            @media @mobile{
-                margin-left: -0.8rem;
-                font-size: 12rem;
-            }
-        }//closes h1
-    }//closes .top-text
+            margin-left: -0.8rem;
+            font-size: 12rem;
+            padding-top: 5rem;
+        }
+    }//closes h1
 }//closes .top-image
 
 .top-content{
-        display: flex;
-        width: 100%;
         @media @mobile{
             flex-direction: column;
         }
 
         div{
-            margin: 0 2rem 0 2rem;
+            margin: 0 0 0 1rem;
             border: 1px solid @pink;
             padding: 1rem;
             @media @mobile{
@@ -70,23 +61,29 @@
     }//closes h2
     .reviews{
         display: flex;
+        width: 100%;
+        @media @mobile{
+            display: inline;
+        }
         div{
-            margin: 2rem 5rem 0 5rem;
+            margin: 2rem;
+            padding: 2rem 0 0 2rem;
+            border: 1px solid @purple;
+            width: 100%;
+            @media @mobile{
+                margin: 0;
+            }
             img{
+                max-width: 100%;
                 width: 30rem;
                 height: 30vh;
             }//closes img
                 .man{
-                    margin-left: 4rem;
                     @media @mobile{
                         margin-left: 1.8rem;
                     } 
             }//closes .man
-            p{
-                margin: 2rem 0;
-            }//closes p
             .man-text{
-                margin-left: 4rem;
                 @media @mobile{
                     margin-left: 1.8rem;
                 }
@@ -146,7 +143,6 @@
                         color: @pink;
                     }
                 }//closes &:hover
-
             }//closes a
         }//closes nav
     }//closes .bottom-links
