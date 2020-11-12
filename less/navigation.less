@@ -12,10 +12,10 @@ header{
         a{
             padding-right: 0.2rem;   
             font-size: 1.4rem;
-            .navstyle(@black; none);
+            .navstyle(@pink; none);
             
             &:hover{
-                .navstyle(@pink; underline);
+                .navstyle(@black; underline);
             }//closes hover  
         }//close a
     }//closes .signup-stylist
@@ -28,7 +28,7 @@ header{
         a{
             padding-left: 0.2rem;
             font-size: 1.4rem;
-            .navstyle(@black; none);
+            .navstyle(@purple; none);
             
             &:hover{
                 .navstyle(@pink; underline);
@@ -78,6 +78,9 @@ header{
             @media @mobile{
                 display: flex;
                 flex-direction: column;
+            }
+            .home{
+                .navstyle(@purple; none);
             }
             a{
                 padding-left: 2rem;
